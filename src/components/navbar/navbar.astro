@@ -4,7 +4,6 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { StickyHeader, Astronav, MenuItems, MenuIcon } from "astro-navbar";
-import { Image } from "astro:assets";
 import logoImage from "assets/logo.svg";
 
 const menuitems = [
@@ -55,8 +54,8 @@ const menuitems = [
               href="/"
               class="text-lg flex items-center transition focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded-full px-2 -ml-2"
               >
-              <Image
-                src={logoImage}
+              <img
+                src={logoImage.src}
                 alt="Rock Bookkeeping logo"
                 height={1450}
                 width={276}
